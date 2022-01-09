@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/card"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/aqi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text=""
+                android:textColor="@color/font"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_undraw_current_location_rypt" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text="PM 2.5"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/pm25_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text=""
+                        android:textColor="@color/font"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text="PM 10"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/pm10_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text=""
+                        android:textColor="@color/font"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text="O3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/o3_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text=""
+                        android:textColor="@color/font"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text="NO2"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/no2_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text=""
+                        android:textColor="@color/font"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text="SO2"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/so2_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text=""
+                        android:textColor="@color/font"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text="CO"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/co_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text=""
+                        android:textColor="@color/font"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
